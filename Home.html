@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/scripts.js" defer></script>
+</head>
+<body>
+
+ <!-- header section start-->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+    <nav class="navbar">
+        <a href="Home.html" class="tooltip">Home<span class="tooltiptext">Home Page</span></a>
+        <a href="Coffee_selection.html" class="tooltip">Selection<span class="tooltiptext">Coffee Selection</span></a>
+        <a href="Brewing_Equipment.html" class="tooltip">Equipment<span class="tooltiptext">Brewing Equipment</span></a>
+        <a href="Events_and_Workshops.html" class="tooltip">Event<span class="tooltiptext">Events and Workshops</span></a>
+        <a href="Shopping_Cart.html" class="tooltip">Cart<span class="tooltiptext">Shopping Cart</span></a>
+        <a href="Special_Offers_and_Subscriptions.html" class="tooltip">Offers<span class="tooltiptext">Special Offers and Subscriptions</span></a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search tooltip" id="search-btn"> 
+            <span class="tooltiptext">Search</span>
+        </div>
+        <div class="fas fa-shopping-cart tooltip" id="cart-btn"> 
+            <span class="tooltiptext">Shopping Cart</span>
+        </div>
+        <div class="fas fa-bars tooltip" id="menu-btn"> 
+            <span class="tooltiptext">Menu</span>
+        </div>
+    </div>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+</header>
+<!-- header section end-->
+
+    <!-- image section start -->
+    <div class="image-section">
+        <img src="images/home.png" alt="Coffee Shop" class="header-image">
+    </div>
+    <!-- image section end -->
+
+<!-- info section start -->
+<section class="info-section">
+    <h2>Welcome to Bean Boutique</h2> <!-- Added heading here -->
+    <p class="info-paragraph">
+        Welcome to Bean Boutique, where we celebrate the art of coffee. Discover our unique blends, learn about brewing techniques, and join our community of coffee lovers. Experience the warmth of our coffee shop from the comfort of your home.
+    </p>
+    <a href="#" class="learn-more-button">Learn More</a>
+</section>
+<!-- info section end -->
+
+<div class="coffee-container" id="people-coffee">
+    <h2 class="coffee-title">People Enjoying Coffee</h2>
+    <div class="coffee-images">
+        <img src="images/coffeeimage1.jpg" alt="Person drinking coffee" class="coffee-image">
+        <img src="images/coffeeimage2.jpg" alt="Person drinking coffee" class="coffee-image">
+        <img src="images/coffeeimage3.jpg" alt="Person drinking coffee" class="coffee-image">
+    </div>
+</div>
+
+    <!-- Gallery section start -->
+    <!-- Center container for title and slideshow -->
+    <div class="center-container">
+        <!-- Title text -->
+        <div class="title">Client's Choice</div>
+
+        <!-- Slideshow container with icons -->
+        <div class="slideshow-container bottom-margin">
+            <!-- Left navigation icon -->
+            <div class="nav-icon left" onclick="changeSlide(-1)">&#10094;</div>
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="images/image2.png" alt="">
+                <div class="card-content">
+                    <p><b><i>Nicaraguan Honey Process coffee</i></b> features a unique production method where mucilage is left on beans during drying, resulting in a sweet, fruity flavor profile with bright acidity.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="images/image3.png" alt="">
+                <div class="card-content">
+                    <p><b><i>Ethiopian Light Roast coffee</i></b> is celebrated for its vibrant acidity and complex flavors. It often features fruity notes like berry and citrus, complemented by floral aromas and a tea-like body.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="images/kenyan.jpg" alt="">
+                <div class="card-content">
+                    <p><b><i>Blue Mountain coffee</i></b> is renowned for its mild flavor, smooth body, and bright acidity. Grown in the Blue Mountains, it has a distinct floral aroma and nutty undertones.</p>
+                </div>
+            </div>
+
+            <!-- Right navigation icon -->
+            <div class="nav-icon right" onclick="changeSlide(1)">&#10095;</div>
+        </div>
+    </div>
+    <!-- Gallery section end -->
+
+    <!-- testimonial start -->
+    <section class="container">
+        <h2 class="testimonial-section-heading">What Our Customers Say</h2>
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="images/testimonial1.png" alt="" class="image">
+                    <p>"Love the cozy atmosphere! The Nicaraguan Honey Process coffee is a must-try. Friendly staff and great vibes!"</p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Marnie Lotter</span>
+                        <span class="job">Trip Advisor</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/testimonial2.png" alt="" class="image">
+                    <p>"My go-to spot! The Ethiopian Light Roast is rich and fruity. It gets crowded on weekends, but it's worth it!"</p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Jake Thompson</span>
+                        <span class="job">Trip Advisor</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/testimonial3.png" alt="" class="image">
+                    <p>"Amazing experience! The Jamaican Blue Mountain coffee is smooth and aromatic. The pastries are delicious too!"</p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Sarah Kim</span>
+                        <span class="job">Trip Advisor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- testimonial end -->
+
+    <!-- location plugins start -->
+    <section class="location">
+        <div class="box">
+            <h1>Our Location</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus libero architecto a aspernatur eum perspiciatis earum temporibus magni! Soluta, doloremque quae rerum est nihil voluptatibus culpa dignissimos aut cumque doloribus.</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11547.069664365057!2d84.43096036150109!3d27.66914800385412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994439ad1ca5a8d%3A0x6c5e40f75e1f474f!2sChitwan%20District!5e0!3m2!1sen!2snp!4v1730278748625!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- location plugins end -->
+
+    <!--footer start-->
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affilate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>order and picks up</h4>
+                    <ul>
+                        <li><a href="#">delivery</a></li>
+                        <li><a href="#">order and pickup option</a></li>
+                        <li><a href="#"> explore and find coffee for home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <span>&copy;</span> Bean Boutique | Powered by: Sudip Pathak
+        </div>
+        </div>
+    </footer>
+
+    <!--footer end-->
+    
+<!-- popup window start -->
+    <div class="popup-container" id="popup">
+        <div class="popup-content">
+            <h2>Welcome to Bean Boutique</h2>
+            <img src="images/logo.png" alt="Small Image" class="popup-image">
+            <p>Get 10% off your first purchase in email sign up.</p>
+            <div class="popup-buttons">
+                <button class="cancel-btn" onclick="closePopup()">Cancel</button>
+                <button onclick="signUp()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+<!-- popup window end -->
+
+</body>
+</html>

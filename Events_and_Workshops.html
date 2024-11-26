@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/scripts.js" defer></script>
+</head>
+<body>
+
+   <!-- header section start-->
+   <header class="header">
+    <a href="#" class="logo">
+        <img src="images//logo.png" alt="">
+    </a>
+    <nav class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Coffee_selection.html">Selection</a>
+        <a href="Brewing_Equipment.html">Equipment</a>
+        <a href="Events_and_Workshops.html">Event</a>
+        <a href="Shopping_Cart.html">Cart</a>
+        <a href="Special_Offers_and_Subscriptions.html">Offers</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+</header>
+<!-- header section end-->
+
+
+<main class="events-workshops-container">
+    <h1 class="ew-title">Events & Workshops</h1>
+    
+    <section class="ew-calendar">
+      <h2>Upcoming Events Calendar</h2>
+      <div id="calendar"><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKathmandu&showPrint=0&src=c3VkaXBiYWJhamlpMTIxQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IubnAjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAxMzAzNTExODIzOTQ5MjgxMTM0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23007b83" ></iframe></div>
+    </section>
+  
+    <section class="ew-featured-events">
+      <h2>Featured Events</h2>
+      <div class="ew-card-container">
+        <div class="ew-card">
+          <img src="images/coffee_tasting_session.jpg" alt="Coffee Tasting Session">
+          <h3>Coffee Tasting Session</h3>
+          <p>Join us for an immersive coffee tasting experience where you'll explore a selection of our finest specialty blends. Learn about the unique flavor profiles, origins, and brewing techniques from our expert baristas. Perfect for both coffee enthusiasts and newcomers alike, this session promises to awaken your senses and deepen your appreciation for coffee.</p>
+          <button class="ew-register-btn">Register</button>
+        </div>
+
+        <div class="ew-card">
+          <img src="images/brewing_masterclass.jpg" alt="Brewing Class">
+          <h3>Brewing Masterclass</h3>
+          <p>Elevate your coffee brewing skills in our hands-on Brewing Masterclass. This workshop is designed for anyone looking to master the art of brewing, from pour-over to espresso techniques. Our skilled instructors will guide you through the process, sharing tips and tricks to help you create the perfect cup every time. Bring your passion for coffee and leave with newfound knowledge!</p>
+          <button class="ew-register-btn">Register</button>
+        </div>
+
+        <div class="ew-card">
+          <img src="images/meet_the_roaster.jpg" alt="Meet the Roaster">
+          <h3>Meet the Roaster</h3>
+          <p>Get an exclusive behind-the-scenes look at the coffee roasting process in our "Meet the Roaster" event. Engage with our head roaster as they share insights into sourcing, roasting, and blending our unique coffee beans. This interactive session will include a Q&A, allowing you to ask all your burning questions about coffee production. Don't miss this opportunity to connect with the people behind your favorite brews!</p>
+          <button class="ew-register-btn">Register</button>
+        </div>
+      </div>
+    </section>
+  
+    <section class="ew-registration-form">
+      <h2>Event Registration</h2>
+      <form id="eventRegistrationForm">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <select id="eventSelect" name="eventSelect" required>
+          <option value="">Select an Event</option>
+          <option value="coffee-tasting">Coffee Tasting Session</option>
+          <option value="brewing-class">Brewing Masterclass</option>
+          <option value="meet-roaster">Meet the Roaster</option>
+        </select>
+        <button type="submit" class="ew-submit-btn">Register for Event</button>
+      </form>
+    </section>
+  </main>
+
+
+
+    <!--footer start-->
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affilate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>order and picks up</h4>
+                    <ul>
+                        <li><a href="#">delivery</a></li>
+                        <li><a href="#">order and pickup option</a></li>
+                        <li><a href="#"> explore and find coffee for home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <span>&copy;</span> Bean Boutique | Powered by: Sudip Pathak
+        </div>
+        </div>
+    </footer>
+
+    <!--footer end-->
+    
+</body>
+</html>                                                                                                                                                                            
+
+    <!--footer end-->
+    
+</body>
+</html>

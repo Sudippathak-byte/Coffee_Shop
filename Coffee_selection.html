@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/scripts.js" defer></script>
+</head>
+<body>
+
+   <!-- header section start-->
+   <header class="header">
+    <a href="#" class="logo">
+        <img src="images//logo.png" alt="">
+    </a>
+    <nav class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Coffee_selection.html">Selection</a>
+        <a href="Brewing_Equipment.html">Equipment</a>
+        <a href="Events_and_Workshops.html">Event</a>
+        <a href="Shopping_Cart.html">Cart</a>
+        <a href="Special_Offers_and_Subscriptions.html">Offers</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+   </header>
+   <!-- header section end-->
+
+   <!--card section start-->
+   <div class="container3">
+    <div class="box">
+        <div class="heading">
+            <h2>Bean Boutique</h2>
+            <h4>Coffee Shop</h4>
+        </div>
+        <img src="images/home1.png" alt="">
+        <div class="text">
+            <p>At Bean Boutique,we believe in the magic of coffee and the warmth of community.</p>
+            <a href="#">Visit now</a>
+        </div>
+    </div>
+   </div>
+   <!--card section end-->
+
+     <!-- Main Content Section -->
+     <section class="coffee-selection-page">
+        <div class="coffee-selection-container">
+            <h1 class="coffee-selection-title">Our Unique Coffee Blends</h1>
+            
+            <!-- Search Bar -->
+            <div class="coffee-search-bar">
+                <input type="text" id="coffeeSearch" placeholder="Search for a coffee blend..." onkeyup="filterCoffee()">
+            </div>
+            
+            <!-- Coffee Items -->
+            <div class="coffee-items">
+                <!-- Coffee Item 1 -->
+                <div class="coffee-item" data-coffee="Arabica Delight">
+                    <img src="images/Arabica_delight.jpg" alt="Arabica Delight" class="coffee-img">
+                    <h2 class="coffee-name">Arabica Delight</h2>
+                    <p class="coffee-description">A smooth, full-bodied coffee with hints of chocolate and caramel.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Chocolate, caramel, medium acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> French Press</p>
+                </div>
+
+                <!-- Coffee Item 2 -->
+                <div class="coffee-item" data-coffee="Ethiopian Sunrise">
+                    <img src="images/Ethiopian.jpg" alt="Ethiopian Sunrise" class="coffee-img">
+                    <h2 class="coffee-name">Ethiopian Sunrise</h2>
+                    <p class="coffee-description">Bright and fruity with floral notes, perfect for a refreshing start.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Berry, floral, light acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Pour Over</p>
+                </div>
+
+                <!-- Coffee Item 3 -->
+                <div class="coffee-item" data-coffee="Colombian Harmony">
+                    <img src="images/colombian.jpg" alt="Colombian Harmony" class="coffee-img">
+                    <h2 class="coffee-name">Colombian Harmony</h2>
+                    <p class="coffee-description">Balanced and rich with a smooth mouthfeel and nutty finish.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Nutty, chocolatey, mild acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Espresso</p>
+                </div>
+
+                <!-- Coffee Item 4 -->
+                <div class="coffee-item" data-coffee="Kenyan Zest">
+                    <img src="images/kenyan.jpg" alt="Kenyan Zest" class="coffee-img">
+                    <h2 class="coffee-name">Kenyan Zest</h2>
+                    <p class="coffee-description">Vibrant and lively, with citrus undertones and a bright finish.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Citrus, floral, high acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Cold Brew</p>
+                </div>
+
+                <!-- Coffee Item 5 -->
+                <div class="coffee-item" data-coffee="Sumatra Deep">
+                    <img src="images/sumatra.jpg" alt="Sumatra Deep" class="coffee-img">
+                    <h2 class="coffee-name">Sumatra Deep</h2>
+                    <p class="coffee-description">Earthy and bold, with a syrupy body and complex flavor.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Earthy, herbal, low acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> AeroPress</p>
+                </div>
+
+                <!-- Coffee Item 6 -->
+                <div class="coffee-item" data-coffee="Costa Rican Classic">
+                    <img src="images/costa_rican.jpg" alt="Costa Rican Classic" class="coffee-img">
+                    <h2 class="coffee-name">Costa Rican Classic</h2>
+                    <p class="coffee-description">Sweet and smooth with notes of honey and citrus.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Honey, citrus, medium acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Drip Brew</p>
+                </div>
+
+                <!-- Coffee Item 7 -->
+                <div class="coffee-item" data-coffee="Guatemalan Glow">
+                    <img src="images/gautemelan.jpg" alt="Guatemalan Glow" class="coffee-img">
+                    <h2 class="coffee-name">Guatemalan Glow</h2>
+                    <p class="coffee-description">A complex, rich coffee with a smooth, full-bodied finish.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Cocoa, toffee, balanced acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Chemex</p>
+                </div>
+
+                <!-- Coffee Item 8 -->
+                <div class="coffee-item" data-coffee="Brazilian Bliss">
+                    <img src="images/brazilian.jpg" alt="Brazilian Bliss" class="coffee-img">
+                    <h2 class="coffee-name">Brazilian Bliss</h2>
+                    <p class="coffee-description">Smooth and nutty with a hint of sweetness, perfect for espresso.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Nutty, mild, low acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Espresso</p>
+                </div>
+
+                <!-- Coffee Item 9 -->
+                <div class="coffee-item" data-coffee="Mexican Moonlight">
+                    <img src="images/mexican.jpg" alt="Mexican Moonlight" class="coffee-img">
+                    <h2 class="coffee-name">Mexican Moonlight</h2>
+                    <p class="coffee-description">Mild and sweet with a chocolatey profile and light body.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Chocolate, nutty, mild acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Moka Pot</p>
+                </div>
+
+                <!-- Coffee Item 10 -->
+                <div class="coffee-item" data-coffee="Peruvian Pure">
+                    <img src="images/peruvian.jpg" alt="Peruvian Pure" class="coffee-img">
+                    <h2 class="coffee-name">Peruvian Pure</h2>
+                    <p class="coffee-description">Delicate and aromatic, with floral and fruity undertones.</p>
+                    <p class="coffee-notes"><strong>Tasting Notes:</strong> Floral, fruity, medium acidity.</p>
+                    <p class="coffee-brew-method"><strong>Recommended Brew Method:</strong> Pour Over</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content section -->
+
+    <!-- image section start -->
+    <div class="menu-section">
+        <img src="images/menu.png" alt="menu" class="menu-image">
+    </div>
+    <!-- image section end -->
+
+
+
+    <!--footer start-->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affilate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>order and picks up</h4>
+                    <ul>
+                        <li><a href="#">delivery</a></li>
+                        <li><a href="#">order and pickup option</a></li>
+                        <li><a href="#"> explore and find coffee for home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <span>&copy;</span> Bean Boutique | Powered by: Sudip Pathak
+        </div>
+        </div>
+    </footer>
+    <!--footer end-->
+    
+</body>
+</html>
